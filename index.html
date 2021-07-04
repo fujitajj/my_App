@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>逆三角関数 計算ツール</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <div class="main">
+    <div class="container">
+      <h1>逆三角関数 角度計算ツール</h1>
+      <p>ｘ（底辺）、ｙ（高さ）、ｚ（斜辺）のうちいずれか2辺だけ入力してください。</p>
+      <img class="triangle" src="image/三角関数.jpg">
+      <form class="form-wrap">
+        <dt>高さ:</dt>
+        <input id="height" class="number" type="text" placeholder="ｙ（高さ）">
+        <dt>底辺:</dt>
+        <input id="bottom" class="number" type="text" placeholder=x（底辺）>
+        <dt>斜辺:</dt>
+        <input id="hypotenuse" class="number" type="text" placeholder="r（斜辺）">
+      </form>
+      <div class="btn-wrapper">  
+        <button id="btn">計算する</button>
+        <button id="reset">クリア</button>
+      </div>
+      <dt class="r">Θ(角度):</dt>
+      <input id="radian" class="number" readonly="" placeholder="Θ（角度）">
+    </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
